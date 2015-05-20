@@ -14,7 +14,7 @@ html {
 	padding: 0;
 	}
 body { 
-	font: 75% georgia, sans-serif;
+	font: 100% ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
 	line-height: 1.88889;
 	color: #555753; 
 	background: #fff url(blossoms.jpg) no-repeat bottom right; 
@@ -26,9 +26,11 @@ p {
 	text-align: justify;
 	}
 h3 { 
-	font: italic normal 1.4em georgia, sans-serif;
+	font: italic normal 1.4em ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
 	letter-spacing: 1px; 
-	margin-bottom: 0; 
+	margin-bottom: 0;
+	margin-left:auto;
+	margin-right:auto;
 	color: #7D775C;
 	}
 a:link { 
@@ -49,12 +51,15 @@ abbr {
 	border-bottom: none;
 	}
 
+.zen-summary {
+	margin-left:0 auto;
+}
 
 /* specific divs */
 .page-wrapper { 
 	background: url(zen-bg.jpg) no-repeat top left; 
-	padding: 0 175px 0 110px;  
-	margin: 0; 
+	padding: 0 175px 0 175px;  
+	margin: 0 auto; 
 	position: relative;
 	}
 
@@ -65,10 +70,10 @@ abbr {
 
 header h1 { 
 	background: transparent url(h1.gif) no-repeat top left;
-	margin-top: 10px;
+	margin-top: 1px;
 	display: block;
 	width: 219px;
-	height: 87px;
+	height: 1px;
 	float: left;
 
 	text-indent: 100%;
@@ -93,20 +98,69 @@ header {
 }
 
 .summary {
+	position:fixed;
 	clear: both; 
 	margin: 20px 20px 20px 10px; 
 	width: 160px; 
-	float: left;
+	left: -10px;
+	top: 70px;
+	float:left;
 	}
 .summary p {
 	font: italic 1.1em/2.2 georgia; 
 	text-align: center;
 	}
 
+.design-selection {
+	position:fixed;
+	top:30px;
+}
+
+.zen-resources {
+	position:fixed;
+	bottom:130px;
+}
+
+.design-archives {
+	position:fixed;
+	bottom:30px;
+}
+
+.explanation {
+	border-style: inset;
+    border-width: 5px;
+}
+
+.participation {
+	border-style: inset;
+    border-width: 5px;
+	width:600px;
+	margin: 0 auto;
+}
+
+.benefits {
+	border-style: inset;
+    border-width: 5px;
+}
+
+.requirements {
+	border-style: inset;
+    border-width: 5px;
+	width:600px;
+	margin: 0 auto;
+}
 .preamble {
-	clear: right; 
-	padding: 0px 10px 0 10px;
+	clear: left; 
+	border-style: inset;
+    border-width: 5px;
+	width:600px;
+	margin: 0 auto;
 	}
+
+div#zen-preamble.preamble {
+	margin-right: 50;
+	margin-left: 50;
+}
 .supporting {	
 	padding-left: 10px; 
 	margin-bottom: 40px;
@@ -120,7 +174,7 @@ footer a:link, footer a:visited {
 	}
 
 .sidebar {
-	margin-left: 600px; 
+	margin-left: 100px; 
 	position: absolute; 
 	top: 0; 
 	right: 0;
